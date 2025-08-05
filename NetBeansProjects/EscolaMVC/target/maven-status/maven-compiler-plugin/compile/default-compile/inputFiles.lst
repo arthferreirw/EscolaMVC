@@ -1,0 +1,7 @@
+/home/arthur/NetBeansProjects/EscolaMVC/src/main/java/com/mycompany/escolamvc/EscolaMVC.java
+/home/arthur/NetBeansProjects/EscolaMVC/src/main/java/com/mycompany/model/classes/Aluno.java
+/home/arthur/NetBeansProjects/EscolaMVC/src/main/java/com/mycompany/model/classes/Disciplina.java
+/home/arthur/NetBeansProjects/EscolaMVC/src/main/java/com/mycompany/model/classes/Pessoa.java
+/home/arthur/NetBeansProjects/EscolaMVC/src/main/java/com/mycompany/model/classes/Professor.java
+/home/arthur/NetBeansProjects/EscolaMVC/src/main/java/com/mycompany/model/files/FilePersistence.java
+/home/arthur/NetBeansProjects/EscolaMVC/src/main/java/com/mycompany/model/files/SerializadorJSONAluno.java
