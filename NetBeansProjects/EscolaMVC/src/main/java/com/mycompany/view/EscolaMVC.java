@@ -4,6 +4,8 @@
 
 package com.mycompany.view;
 
+import com.mycompany.view.JFrameDepartamento;
+
 /**
  *
  * @author arthur
@@ -11,6 +13,7 @@ package com.mycompany.view;
 public class EscolaMVC {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+         JFrameDepartamento tela = new JFrameDepartamento();
+        tela.setVisible(true);
     }
 }
