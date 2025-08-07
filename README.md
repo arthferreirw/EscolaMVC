@@ -2,4 +2,4 @@
 
 Link para os vídeos no youtube: 
 - Parte 1: https://youtu.be/aW8RepVHXf4
-- Parte 2: 
+- Parte 2: https://youtu.be/NSWAMy9PsDI
