@@ -240,18 +240,8 @@ public class jDialogDisciplina extends javax.swing.JDialog {
       this.habilitarCampos(true);
       this.editando = false;
     }//GEN-LAST:event_btnNovo1ActionPerformed
-     public Disciplina getObjetoSelecionadoNaGrid() {
-        int linhaSelecionada = grdDisciplina.getSelectedRow();
-
-        if (linhaSelecionada >= 0) {
-            TMCadDisciplina tmCadAluno = (TMCadDisciplina) grdDisciplina.getModel();
-
-             Disciplina d = tmCadAluno.getObjetoAluno(linhaSelecionada);
-            return d;
-        }
-        
-        return null;
-    }
+   
+     
     private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
         Disciplina disciplinaEscolhida = this.getObjetoSelecionadoNaGrid();
        
@@ -311,7 +301,26 @@ public class jDialogDisciplina extends javax.swing.JDialog {
         atualizarTabela();
     }
     }//GEN-LAST:event_btnMatricularActionPerformed
+     private void grdAlunoMouseClicked(java.awt.event.MouseEvent evt) {                                       
+       Disciplina a = this.getObjetoSelecionadoNaGrid();
+       this.objetoParaCampos(a);
+    }
+    public Disciplina getObjetoSelecionadoNaGrid() {
+        int linhaSelecionada = grdDisciplina.getSelectedRow();
 
+        if (linhaSelecionada >= 0) {
+            TMCadDisciplina tmCadAluno = (TMCadDisciplina) grdDisciplina.getModel();
+
+             Disciplina d = tmCadAluno.getObjetoAluno(linhaSelecionada);
+            return d;
+        }
+        
+        return null;
+    }
+      
+    
+  
+    
     /**
      * @param args the command line arguments
      */

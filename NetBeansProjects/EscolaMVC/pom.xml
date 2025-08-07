@@ -18,18 +18,24 @@
     </properties>
 
     <dependencies>
-        <!-- Exemplo: Jackson JSON (adicione as que precisar) -->
+        <!-- Exemplo: Jackson JSON -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>2.17.1</version>
         </dependency>
-        <!-- Remova ou corrija outras dependências inválidas -->
+
+        <!-- Driver JDBC do SQLite -->
+        <dependency>
+            <groupId>org.xerial</groupId>
+            <artifactId>sqlite-jdbc</artifactId>
+            <version>3.45.3.0</version>
+        </dependency>
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Plugin para compilar habilitando preview features -->
+            <!-- Plugin para compilar com preview features -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -42,16 +48,17 @@
                 </configuration>
             </plugin>
 
-            <!-- Plugin para executar habilitando preview features -->
+            <!-- Plugin para executar com preview features -->
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
                     <mainClass>${exec.mainClass}</mainClass>
-                    <jvmArgs>
-                        <jvmArg>--enable-preview</jvmArg>
-                    </jvmArgs>
+                    <exec.vmArgs>
+                        <exec.vmArg>--enable-preview</exec.vmArg>
+                        <exec.vmArg>--enable-native-access=ALL-UNNAMED</exec.vmArg>
+                    </exec.vmArgs>
                 </configuration>
             </plugin>
         </plugins>

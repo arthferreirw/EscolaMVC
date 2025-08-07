@@ -323,7 +323,11 @@ public class JDialogAluno extends javax.swing.JDialog {
         this.habilitarCampos(false);
         this.editando = false;
     }//GEN-LAST:event_btnCancelarActionPerformed
-
+      private void grdAlunoMouseClicked(java.awt.event.MouseEvent evt) {                                       
+       Aluno a = this.getObjetoSelecionadoNaGrid();
+       this.objetoParaCampos(a);
+    }
+   
     /**
      * @param args the command line arguments
      */
