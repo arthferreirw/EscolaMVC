@@ -1,0 +1,45 @@
+# Ignorar arquivos e pastas pessoais
+../../.bash*
+../../.cache/
+../../.config/
+../../.local/
+../../.wine/
+../../.steam/
+../../.m2/
+../../.java/
+../../.vscode/
+../../.netbeans/
+../../.fonts.conf
+../../.pki/
+../../.gnupg/
+../../.wget-hsts
+../../*.mkv
+../../*.mp4
+../../Downloads/
+../../Documento# Ignorar arquivos de configuração pessoal
+.bash*
+.zshrc
+.gitconfig
+.wget-hsts
+
+# Ignorar pastas do sistema e programas
+.cache/
+.config/
+.local/
+.vscode/
+.m2/
+.steam/
+.wine/
+.minecraft/
+.NetBeansProjects/
+
+# Ignorar vídeos
+*.mkv
+*.mp4
+
+# Ignorar pastas comuns
+Documentos/
+Downloads/
+Games/
+"Área de trabalho"/
+
